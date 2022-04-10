@@ -29,6 +29,10 @@ export 'package:flextras/flextras.dart';
 // SVGs
 export 'package:flutter_svg/flutter_svg.dart';
 
+
+// page_flip_builder
+export 'package:page_flip_builder/page_flip_builder.dart';
+
 // ? --------------------APP FILES--------------------
 
 // Theme

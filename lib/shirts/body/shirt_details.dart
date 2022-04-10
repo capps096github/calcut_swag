@@ -1,7 +1,7 @@
 import '../../swag_exporter.dart';
+import 'image/shirt_image_flipper.dart';
 import 'number/shirt_numbers.dart';
 import 'price_item.dart';
-import 'shirt_image.dart';
 import 'size_item/size_item_list.dart';
 
 class CalcutShirtDetails extends ConsumerWidget {
@@ -11,9 +11,6 @@ class CalcutShirtDetails extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return const ExpandedScrollingColumn(
       children: [
-        // image
-        ShirtImage(),
-
         // divider
         ThickHorizontalDivider(
           dividerColor: calcutError,
@@ -23,6 +20,10 @@ class CalcutShirtDetails extends ConsumerWidget {
 
         // price
         PriceItem(),
+        VerticalSpacing(of: 10),
+
+        // image
+        ShirtImageFlipper(),
 
         VerticalSpacing(of: 10),
 

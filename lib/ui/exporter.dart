@@ -5,3 +5,4 @@ export 'thick_dividers.dart';
 export 'calcut_styles.dart';
 export 'from_capps.dart';
 export 'section_title.dart';
+export 'hint_text.dart';

@@ -12,18 +12,18 @@ const List<SwagSize> swagSizeItems = [
     name: "Medium",
     abbreviation: "M",
     tooltip: "Medium Shirt",
-    value: 540,
+    value: 405,
   ),
   SwagSize(
     name: "Large",
     abbreviation: "L",
     tooltip: "Large Shirt",
-    value: 810,
+    value: 540,
   ),
   SwagSize(
     name: "Extra Large",
     abbreviation: "XL",
     tooltip: "Extra Large Shirt",
-    value: 1080,
+    value: 675,
   ),
 ];

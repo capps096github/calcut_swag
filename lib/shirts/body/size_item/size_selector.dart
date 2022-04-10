@@ -1,5 +1,4 @@
 import '../../../swag_exporter.dart';
-import '../shirt_image.dart';
 import 'size_item_provider.dart';
 import 'swag_size.dart';
 
@@ -77,9 +76,6 @@ class SwagSizeSelector extends ConsumerWidget {
                 onTap: () {
                   ///[Notify Listeners]
                   ref.read(selectedSizeIndexProvider.state).state = itemIndex;
-
-                  //
-                  ref.read(shirtImageSizeProvider.state).state = sizeItem.value;
                 },
                 child: Center(
                   child: Text(

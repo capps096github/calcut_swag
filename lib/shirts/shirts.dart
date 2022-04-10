@@ -12,7 +12,7 @@ class CalcutShirt extends StatelessWidget {
     return Scaffold(
       backgroundColor: colorScheme.error,
       appBar: AppBar(
-        backgroundColor: calcutTransparent,
+        backgroundColor: colorScheme.error,
         automaticallyImplyLeading: false,
         title: Image.asset(
           "icons/calcut_white.png",
