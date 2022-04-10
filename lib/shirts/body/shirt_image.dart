@@ -6,22 +6,18 @@ class ShirtImage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
 // image size
-    final imageSize = ref.watch(shirtImageSizeProvider.state).state;
+    final imageSize = ref.watch(shirtImageSizeProvider.state).state / 1.5;
 // image
-    return AnimatedSwitcher(
-      duration: oneSecond,
-      transitionBuilder: (child, animation) {
-        return ScaleTransition(
-          scale: animation,
-          child: child,
-        );
-      },
-      child: Image.asset(
-        "images/calcut_shirt.png",
-        key: ValueKey(imageSize),
-        fit: BoxFit.cover,
+    return Center(
+      child: AnimatedContainer(
+        duration: twoSeconds,
         height: imageSize,
         width: imageSize,
+        child: Image.asset(
+          "images/calcut_shirt.png",
+          key: ValueKey(imageSize),
+          fit: BoxFit.cover,
+        ),
       ),
     );
   }

@@ -1,6 +1,6 @@
 import '../../swag_exporter.dart';
 import 'number/shirt_numbers.dart';
-import 'price/price_item.dart';
+import 'price_item.dart';
 import 'shirt_image.dart';
 import 'size_item/size_item_list.dart';
 

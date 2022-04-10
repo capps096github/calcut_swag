@@ -1,5 +1,5 @@
-import '../../../swag_exporter.dart';
-import '../number/number_provider.dart';
+import '../../swag_exporter.dart';
+import 'number/number_provider.dart';
 
 class PriceItem extends ConsumerWidget {
   const PriceItem({Key? key}) : super(key: key);
