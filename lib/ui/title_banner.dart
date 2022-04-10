@@ -5,7 +5,8 @@ import '../swag_exporter.dart';
 class TitleBanner extends StatelessWidget {
   const TitleBanner({
     Key? key,
-    required this.title, this.textColor = calcutColor,
+    required this.title,
+    this.textColor = calcutColor,
   }) : super(key: key);
 // title to place in the banner
   final String title;
@@ -30,7 +31,7 @@ class TitleBanner extends StatelessWidget {
           style: GoogleFonts.spartan(
             fontSize: isDesktop ? 25 : 22.5,
             color: textColor,
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w800,
           ),
         ),
       ),

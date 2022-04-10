@@ -14,7 +14,8 @@ class SwagSizeSelectorsList extends ConsumerWidget {
         Text(
           "Select Size",
           style: GoogleFonts.spartan(
-            fontSize: 17,
+            fontSize: 20,
+            color: calcutError,
             fontWeight: FontWeight.w700,
           ),
         ),

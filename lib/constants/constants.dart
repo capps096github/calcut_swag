@@ -31,3 +31,7 @@ const double sideBarTabletWidth = 90;
 
 // check if we are in debug mode
 const bool isCalcutDebugMode = kDebugMode;
+
+
+// tile size
+const double tileSize = 50;

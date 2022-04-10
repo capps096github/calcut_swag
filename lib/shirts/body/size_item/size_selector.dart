@@ -25,8 +25,9 @@ class SwagSizeSelector extends ConsumerWidget {
     final colorScheme = Theme.of(context).colorScheme;
     final background = colorScheme.background;
     final primary = colorScheme.primary;
+    final onPrimary = colorScheme.onPrimary;
     // secondary
-    final secondary = colorScheme.secondary;
+    final errorColor = colorScheme.error;
 
     final iconColor = (isSelected ? background : primary);
     final backgroundColor = (isSelected ? primary : background);
@@ -38,8 +39,6 @@ class SwagSizeSelector extends ConsumerWidget {
       color: iconColor,
     );
 
-    // tile size
-    const double tileSize = 50;
 
     return AnimatedSwitcher(
       duration: aHundredMilliseconds,
@@ -68,9 +67,9 @@ class SwagSizeSelector extends ConsumerWidget {
             margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 4),
             child: Tooltip(
               message: sizeItem.tooltip,
-              textStyle: TextStyle(color: primary),
+              textStyle: TextStyle(color: onPrimary),
               decoration: BoxDecoration(
-                color: secondary,
+                color: errorColor,
                 borderRadius: BorderRadius.circular(4),
               ),
               child: InkWell(

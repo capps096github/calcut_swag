@@ -1,5 +1,5 @@
 import '../swag_exporter.dart';
-import 'body/body.dart';
+import 'body/shirt_body.dart';
 import 'navbar.dart';
 
 class CalcutShirt extends StatelessWidget {
@@ -10,19 +10,20 @@ class CalcutShirt extends StatelessWidget {
     //App Theme colorScheme
     final colorScheme = Theme.of(context).colorScheme;
     return Scaffold(
+      backgroundColor: colorScheme.error,
       appBar: AppBar(
-        backgroundColor: colorScheme.background,
+        backgroundColor: calcutTransparent,
         automaticallyImplyLeading: false,
         title: Image.asset(
-          "icons/calcut_navy.png",
+          "icons/calcut_white.png",
           height: 40,
           width: 40,
         ),
-        bottom: const PreferredSize(
-          preferredSize: Size.fromHeight(kToolbarHeight),
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(kToolbarHeight),
           child: TitleBanner(
             title: 'My Calcut Shirt',
-            textColor: calcutColor,
+            textColor: colorScheme.onPrimary,
           ),
         ),
       ),

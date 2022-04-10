@@ -14,7 +14,8 @@ class PriceItem extends ConsumerWidget {
           Text(
             "Price",
             style: GoogleFonts.spartan(
-              fontSize: 17,
+              fontSize: 20,
+              color: calcutError,
               fontWeight: FontWeight.w700,
             ),
           ),
