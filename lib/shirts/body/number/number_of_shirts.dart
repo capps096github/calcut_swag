@@ -36,7 +36,7 @@ class NumberOfShirts extends ConsumerWidget {
                       ref.read(numberOfShirtsProvider.notifier).state -= 1;
                     }
                   : null,
-              tooltip: "Decrease",
+              tooltip: "Remove",
             ),
           ),
 
@@ -57,7 +57,7 @@ class NumberOfShirts extends ConsumerWidget {
               //
               ref.read(numberOfShirtsProvider.notifier).state += 1;
             },
-            tooltip: "Increase",
+            tooltip: "Add",
           ),
         ],
       ),

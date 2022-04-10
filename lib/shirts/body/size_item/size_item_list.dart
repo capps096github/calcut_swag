@@ -10,15 +10,8 @@ class SwagSizeSelectorsList extends ConsumerWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        // text title
-        Text(
-          "Select Size",
-          style: GoogleFonts.spartan(
-            fontSize: 20,
-            color: calcutError,
-            fontWeight: FontWeight.w700,
-          ),
-        ),
+        const SectionTitle(sectionText: "Select Size"),
+
         const VerticalSpacing(of: 8),
         // use wrap instead
         Wrap(

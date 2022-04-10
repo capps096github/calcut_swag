@@ -31,5 +31,3 @@ class ShirtImage extends ConsumerWidget {
 final shirtImageSizeProvider = StateProvider<double>((ref) {
   return 270;
 });
-
-

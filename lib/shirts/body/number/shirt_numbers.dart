@@ -8,19 +8,10 @@ class ShirtNumbers extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
-      children: [
-        // text title
-        Text(
-          "Number of Shirts",
-          style: GoogleFonts.spartan(
-            fontSize: 20,
-            color: calcutError,
-            fontWeight: FontWeight.w700,
-          ),
-        ),
-        const VerticalSpacing(of: 8),
-
-        const NumberOfShirts(),
+      children: const [
+        SectionTitle(sectionText: "Number of Shirts"),
+        VerticalSpacing(of: 8),
+        NumberOfShirts(),
       ],
     );
   }

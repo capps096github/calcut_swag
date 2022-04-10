@@ -4,6 +4,10 @@ import 'package:intl/intl.dart';
 ///Formats the date to a string
 final dateFormatter = DateFormat('EEE, dd MMMM yyyy - hh:mm a');
 final savedDateFormatter = DateFormat('EEEE, dd MMMM yyyy');
+final priceFormatter = NumberFormat.simpleCurrency(
+  decimalDigits: 0,
+  name: 'UGX  ',
+);
 
 /// regex to check whether a string is made up of only spaces
 final RegExp spaceOnlyRegex = RegExp(r'^\s*$');
@@ -31,7 +35,6 @@ const double sideBarTabletWidth = 90;
 
 // check if we are in debug mode
 const bool isCalcutDebugMode = kDebugMode;
-
 
 // tile size
 const double tileSize = 50;
