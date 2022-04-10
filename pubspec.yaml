@@ -1,0 +1,61 @@
+name: calcut_swag
+description: This is the home to the Calcut App Swag, Check it out
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # icons
+  cupertino_icons: ^1.0.2
+  ionicons: ^0.1.2
+
+
+  # fonts
+  google_fonts: ^2.3.1
+
+  # intl
+  intl: ^0.17.0
+
+  # images
+  cached_network_image: ^3.2.0
+
+  # whatsapp
+  whatsapp_unilink: ^2.0.1+1
+
+  # opening urls
+  url_launcher: ^6.0.20
+
+  # for scrolling rows and columns
+  flextras: ^0.0.2
+
+  # SVGs
+  flutter_svg: ^1.0.3
+
+  # Navigation and Deep Linking
+  go_router: ^3.0.1
+
+  # sharing
+  share_plus: ^3.1.0
+  dotted_border: ^2.0.0+2
+  flutter_riverpod: ^1.0.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - icons/
+    - images/
