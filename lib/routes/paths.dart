@@ -1,6 +1,7 @@
 
 /// initialLocation of the app
-const initialLocation = homePath;
+const initialLocation = shirtsPath;
+// const initialLocation = homePath;
 
 // home
 const homePath = '/';
